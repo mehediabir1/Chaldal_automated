@@ -2,20 +2,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeTest;
 
 import java.nio.file.Watchable;
 
-public class Base {
+public class Base  {
 
     public static WebDriver driver;
 
-    public static void main(String[] args) {
-        ChromeOpen();
+    public static void main(String[] args) throws InterruptedException {
     }
-
+    @BeforeTest
     public static void ChromeOpen(){
         System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-notifications");
         driver.manage().window().maximize();
     }
 
@@ -49,6 +52,10 @@ public class Base {
 
     public static void SleepTime(int time) throws InterruptedException {
         Thread.sleep(time);
+    }
+
+    public static void Utils(){
+
     }
 
 }
