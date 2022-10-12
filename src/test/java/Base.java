@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,17 +16,32 @@ public class Base  {
     }
     @BeforeTest
     public static void ChromeOpen(){
-        System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
-        driver = new ChromeDriver();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
+        System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
     }
-
     public static void ChromeClose(){
         driver.quit();
     }
 
+    public static void Login(){
+        GetUrl("https://chaldal.com/");
+        findByClass("signInBtn").click();
+        SleepTime(2000);
+        findByXpath("//*[@id=\"page\"]/div/div[1]/div/div/div/div[2]/div/form/div[1]/div/div/input").sendKeys("01521326396");
+        SleepTime(2000);
+        findByXpath("//*[@id=\"page\"]/div/div[1]/div/div/div/div[2]/div/form/div[3]/button").click();
+
+        //input the otp
+        SleepTime(15000);
+        findByClass("btn-primary").click();
+
+        //Clicking Previous Order as Close
+        SleepTime(3000);
+        findByClass("close").click();
+    }
     public static void GetUrl(String URL){
         driver.get(URL);
     }
