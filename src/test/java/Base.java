@@ -26,7 +26,7 @@ public class Base  {
         driver.quit();
     }
 
-    public static void Login(){
+    public static void Login() throws InterruptedException {
         GetUrl("https://chaldal.com/");
         findByClass("signInBtn").click();
         SleepTime(2000);
@@ -42,6 +42,7 @@ public class Base  {
         SleepTime(3000);
         findByClass("close").click();
     }
+
     public static void GetUrl(String URL){
         driver.get(URL);
     }
