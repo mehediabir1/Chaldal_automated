@@ -40,13 +40,10 @@ public class Login extends Base{
     @Test
     public static void Logout() throws InterruptedException {
         Thread.sleep(3000);
-
         Actions actions = new Actions(Base.driver);
-        actions.moveByOffset(1420, 20).build().perform();
-        //System.out.println("logout");
-        //actions.moveToElement(findByXpath("//p[@class=\"oneWord\"]")).build().perform();
-        //actions.moveToElement(Base.driver.findElement(By.xpath("//div[@class=\"loginArea loggedIn area-with-dropdown area hidden-xs\"]"))).perform();
-        Thread.sleep(5000);
+//        WebElement logOur = findByXpath("//*[@id=\"page\"]/div/div[3]/div/div[1]/div[1]/div[5]");
+//        actions.moveToElement(logOur).perform();
+        actions.moveByOffset(1450,40).click().build().perform();
     }
 
 }
