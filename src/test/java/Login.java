@@ -13,8 +13,8 @@ public class Login extends Base{
     public static void main(String[] args) throws InterruptedException {
     }
 
-    @Test
-    public static void TC_001() throws InterruptedException {
+    //@Test
+    public static void LOG_001() throws InterruptedException {
         GetUrl("https://chaldal.com/");
         findByClass("signInBtn").click();
         SleepTime(2000);
@@ -35,15 +35,54 @@ public class Login extends Base{
         String logCheck = findByXpath("//*[@id=\"page\"]/div/div[3]/div/div[1]/div[1]/div[5]").getText();
 
         Assert.assertEquals("ABIR",logCheck);
-        System.out.println("TC_001 Passed");
-    }
-    @Test
-    public static void Logout() throws InterruptedException {
-        Thread.sleep(3000);
-        Actions actions = new Actions(Base.driver);
-//        WebElement logOur = findByXpath("//*[@id=\"page\"]/div/div[3]/div/div[1]/div[1]/div[5]");
-//        actions.moveToElement(logOur).perform();
-        actions.moveByOffset(1450,40).click().build().perform();
+        System.out.println("LOG_001 Passed");
     }
 
+    //@Test
+    public static void LOG_002() throws InterruptedException {
+        GetUrl("https://chaldal.com/");
+        findByClass("signInBtn").click();
+        SleepTime(2000);
+        findByXpath("//*[@id=\"page\"]/div/div[1]/div/div/div/div[2]/div/form/div[1]/div/div/input").sendKeys("AbcDefg");
+        SleepTime(2000);
+        findByXpath("//*[@id=\"page\"]/div/div[1]/div/div/div/div[2]/div/form/div[3]/button").click();
+
+        //input the otp
+        SleepTime(2000);
+        String numError = findByClass("errorContainer").getText();
+
+        Assert.assertEquals("Please enter a valid bangladeshi number. e.g. +8801672955886",numError);
+        System.out.println("LOG_002 Passed");
+    }
+
+    @Test //Email Login
+    public static void LOG_003() throws InterruptedException {
+        GetUrl("https://chaldal.com/");
+        findByClass("signInBtn").click();
+        SleepTime(2000);
+        //Email Login Click
+        findByClass("loginBtn emailLoginBtn").click();
+        //email
+        findByClass("input-placeholder").sendKeys("abir.riseuplabs@gmail.com");
+        SleepTime(1000);
+        findByClass("password").sendKeys("abir1100");
+
+        SleepTime(2000);
+        //Click Submit
+        findByClass("loginBtn").click();
+
+        //input the otp
+        SleepTime(2000);
+        String numError = findByClass("errorContainer").getText();
+
+        Assert.assertEquals("Please enter a valid bangladeshi number. e.g. +8801672955886",numError);
+        System.out.println("LOG_002 Passed");
+    }
+
+//    @Test
+//    public static void Order() {
+//        findByXpath("//*[@id=\"page\"]/div/div[3]/div/div[1]/div[1]/div[5]");
+//        Actions actions = new Actions(Base.driver);
+//        actions.moveToElement(findByXpath("//*[@id=\"page\"]/div/div[3]/div/div[1]/div[1]/div[5]")).build().perform();
+//    }
 }

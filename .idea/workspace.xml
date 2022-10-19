@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d32057f1-e167-4906-a5d2-815e5cb067d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Orders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Product.java" afterDir="false" />
     </list>
@@ -44,7 +47,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/User/IdeaProjects/Chaldal_Automation/src/main/resources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -52,7 +56,7 @@
       <recent name="C:\Users\User\IdeaProjects\Chaldal_Automation\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Product">
+  <component name="RunManager" selected="TestNG.Login">
     <configuration name="Base" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Base" />
       <module name="Chaldal_Automation" />
@@ -67,12 +71,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/User/IdeaProjects/Chaldal_Automation/src/test/Runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Chaldal_Automation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/Runner.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Login" type="TestNG">
+      <module name="Chaldal_Automation" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Login" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Login.Logout" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Chaldal_Automation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Login" />
       <option name="METHOD_NAME" value="Logout" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Orders" type="TestNG">
+      <module name="Chaldal_Automation" />
+      <shortenClasspath name="NONE" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Orders" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -100,36 +155,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run" type="TestNG">
-      <module name="Chaldal_Automation" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Login" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Base" />
       <item itemvalue="Application.Login" />
-      <item itemvalue="TestNG.Run" />
-      <item itemvalue="TestNG.Product" />
+      <item itemvalue="TestNG.C:/Users/User/IdeaProjects/Chaldal_Automation/src/test/Runner.xml" />
+      <item itemvalue="TestNG.Login" />
       <item itemvalue="TestNG.Login.Logout" />
+      <item itemvalue="TestNG.Orders" />
+      <item itemvalue="TestNG.Product" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/User/IdeaProjects/Chaldal_Automation/src/test/Runner.xml" />
         <item itemvalue="TestNG.Login.Logout" />
         <item itemvalue="Application.Login" />
       </list>
@@ -179,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665655232267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="7">
+      <created>1666015756742</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666015756742</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -189,7 +233,8 @@
     <MESSAGE value="4" />
     <MESSAGE value="5" />
     <MESSAGE value="6" />
-    <option name="LAST_COMMIT_MESSAGE" value="6" />
+    <MESSAGE value="7" />
+    <option name="LAST_COMMIT_MESSAGE" value="7" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Chaldal_Automation$Login.ic" NAME="Login Coverage Results" MODIFIED="1665392123404" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

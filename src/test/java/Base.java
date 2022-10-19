@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import java.nio.file.Watchable;
@@ -22,6 +23,7 @@ public class Base  {
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
     }
+    //@AfterTest
     public static void ChromeClose(){
         driver.quit();
     }
